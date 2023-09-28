@@ -1,0 +1,123 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GOBackend",
+    "dateExported": "2023-09-26T16:49:58.835Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2afb5403-e940-450a-a971-7a1743475ad9",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "Err",
+            "url": "http://localhost:8080/v1/err",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-22T16:43:54.031Z",
+            "modified": "2023-09-22T16:43:54.031Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd11a814-0b95-4b1a-bf2e-be4e4e6eeb2b",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "healthz",
+            "url": "http://localhost:8080/v1/healthz",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-22T16:44:00.505Z",
+            "modified": "2023-09-22T16:44:00.505Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "00fea414-42d8-47fd-96b2-9660f1656652",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "http://localhost:8080/users",
+            "url": "http://localhost:8080/v1/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-22T17:41:52.697Z",
+            "modified": "2023-09-22T17:41:52.697Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Solomon\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b33698fd-acc7-40ef-b4c4-38d4dcedca38",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "GetUserByAPIKey",
+            "url": "http://localhost:8080/v1/users",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-25T16:00:25.050Z",
+            "modified": "2023-09-25T16:00:25.050Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4efc8d89d6505cfa42cbf7988f6f6e7069737dd0b34d23e481d870a11a4ad541"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "56791c51-b180-4aad-8ece-fe6b575ba332",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "Get feeds",
+            "url": "http://localhost:8080/v1/feeds",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-09-25T17:35:20.599Z",
+            "modified": "2023-09-25T17:35:20.599Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 5199ee8d60957061e4923da3887dae9e16a7376798911370b894c4b632742d05"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\\",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f1630b91-7c87-4dbb-beb3-298d3c19aa4b",
+            "colId": "1f33ec1d-8c35-42da-9e63-7e5206be0391",
+            "containerId": "",
+            "name": "Add Feeds",
+            "url": "http://localhost:8080/v1/feed",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-09-25T17:35:27.851Z",
+            "modified": "2023-09-25T17:35:27.851Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 5199ee8d60957061e4923da3887dae9e16a7376798911370b894c4b632742d05"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Joechlomo Blog\",\n  \"url\" : \"https://justinpot.com/feed/\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

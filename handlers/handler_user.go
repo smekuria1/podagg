@@ -45,3 +45,15 @@ func (ApiConfig *ApiConfig) HandleGetUser(w http.ResponseWriter, r *http.Request
 	respondWithJSON(w, 200, models.DBUserToUser(user))
 
 }
+
+func (ApiConfig *ApiConfig) HandleGetPostsForUser(w http.ResponseWriter, r *http.Request, user db.User) {
+	posts, err := ApiConfig.DB.GetPostsForUser(r.Context(), db.GetPostsForUserParams{
+		UserID: user.ID,
+		Limit:  10,
+	})
+	if err != nil {
+		respondWithError(w, 400, fmt.Sprintf("Couldn't get posts: %v", err))
+	}
+
+	respondWithJSON(w, 200, models.DBPostsToPosts(posts))
+}
